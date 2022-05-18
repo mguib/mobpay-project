@@ -35,7 +35,6 @@ export function Home() {
   useEffect(()=>{
     api.get("/obterClientes").then((response) =>{
       setUsers(response.data.clientes);
-      console.log(response.data.clientes)
     })
   },[])
 
